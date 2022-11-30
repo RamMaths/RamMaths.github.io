@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/650c255290.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="banner">
+
+        <div class="back_menu" id="back_menu"></div>
+        <div class="navbar" id="ulnav">
+            <a href="https://saltillo.tecnm.mx/"><img class="logo" src="../media/logotec.png"></a>
+            <div class="navbarul" id="navbarul">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="#" id="button" class="button">CONTENIDO</a></li>
+               </ul>
+            </div>
+           <i class="fa-solid fa-bars" class="btn_menu" id="btn_menu"></i>
+        </div>
+
+        <div class="table"id="table">
+            <h3>Tabla de contenidos</h3>
+            <div class="cont">
+                <h4>Unidad 1</h4>
+                <ul>
+                    <a href="modelosArq.html"><li><h5>Modelos de arquitectura de computo</h5></li></a>
+                    <a href="analisisComp.html"><li><h5>Análisis de los componentes</h5></li></a>
+                    <a href="memoria.html"><li><h5>Memoria</h5></li></a>
+                    <a href="manejoDeES.html"><li><h5>Manejo de entrada y salida</h5></li></a>
+                    <a href="buses.html"><li><h5>Buses</h5></li></a>
+                    <a href="practica1.html"><li><h5>Práctica 1</h5></li></a>
+                </ul>
+                <h4>Unidad 2</h4>
+                <ul>
+                    <a href="organProces.html"><li><h5>Organización del procesador</h5></li></a>
+                    <a href="cicloDeInstr.html"><li><h5>El ciclo de la instrucción</h5></li></a>
+                    <a href="practica2.html"><li><h5>Práctica 2</h5></li></a>
+                </ul>
+                <h4>Unidad 3</h4>
+                <ul>
+                    <a href="chipset.html"><li><h5>Chipset</h5></li></a>
+                    <a href="appYAmbServ.html"><li><h5>Aplicaciones y ambientes de servicio</h5></li></a>
+                </ul>
+                <h4>Unidad 4</h4>
+                <ul>
+                    <a href="aspeBasCParalela.html"><li><h5>Aspectos básicos de la computación paralela</h5></li></a>
+                    <a href="memoriaMultiP.html"><li><h5>Sistemas de memoria multiprocesadora</h5></li></a>
+                    <a href="multicomputadores.html"><li><h5>Sistemas de memoria de multicomputadores</h5></li></a>
+                </ul>
+            </div>
+        </div>
+
+        <section>
+            <div class="container">
+                <h1>CHIPSET</h1>
+                <div class="text">
+                    <p>
+                        El término chipset está estrechamente relacionado con estos dos conceptos
+                        pero no se puede atribuir a uno de estos componentes.<br><br>
+
+                        El chipset es un conjunto de procesadores situados en la placa base pensados
+                        para que funcionen como si fuera uno solo y realizar las funciones de la placa.
+                        Su función es controlar el flujo de datos entre el procesador, la memoria y
+                        los diferentes periféricos que haya en el ordenador por lo tanto, el chipset
+                        es clave para determinar el rendimiento de un equipo, ya que si ordena el
+                        tráifco de datos de forma un poco lenta, todo el sistema va a ralentizarse.<br><br>
+
+                        Arquitectura actual de chipset, denominada Puente Norte - Puente sur.
+                        Está basada en una doble división estratégica funcional del mismo en base
+                        a la velocidad de los tipos de dispositivos que se pueden conectar.<br><br>
+                    </p>
+                    <div class="imgInfo">
+                        <img src="../media/imgInfo/chipset.png" width="300px" height="200px">
+                    </div>
+                    <h3>Northbridge</h3>
+                    <p>
+                        Une los componentes del bus primario(host bus) y suelen ser los de mayor velocidad
+                        de transferencia: microprocesador, memoria y adaptador de video; suele ser de 64bits
+                        y emplea frecuencias muy elevadas. Se encarga de gestionar:
+                    </p>
+
+                    <ul>
+                        <li>La memoria</li>
+                        <li>Comunicación con el pricesador</li>
+                        <li>Los puertos gráficos</li>
+                        <li>Comunicacnón con los demás componentes del equipo a través del <u>Southbridge</u></li>
+                    </ul>
+                    <h3>Southbridge</h3>
+                    <p>
+                        Es en realidad un puente para acceder a otros buses más lentos como PCI, IDE,
+                        o USB al que se conectan la BIOS, el controlador del ratón y teclado o los
+                        puertos serie y paralelo. El southbridge se une al northbridge mediante un bus
+                        primario llamado Hub Link. Se encarga de gesrionae los siguientes elementos:
+                    </p>
+                    <ul>
+                        <li>Administración de la potencia eléctrica</li>
+                        <li>La bios</li>
+                        <li>Bus PCI e ISA</li>
+                        <li>Controlador DMA</li>
+                        <li>Controlador PATA o SATA</li>
+                        <li>Controlador de interrupciones</li>
+                        <li>Interfaz de sonido</li>
+                        <li>Reloj en tiempo real</li>
+                        <li>Soporte ethernet</li>
+                    </ul>
+                    <div>&nbsp;</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div>&nbsp;</div>
+        </footer>
+
+    </div>
+</body>
+<script src="../js/main.js"></script>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/650c255290.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="banner">
+
+        <div class="back_menu" id="back_menu"></div>
+        <div class="navbar" id="ulnav">
+            <a href="https://saltillo.tecnm.mx/"><img class="logo" src="../media/logotec.png"></a>
+            <div class="navbarul" id="navbarul">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="#" id="button" class="button">CONTENIDO</a></li>
+               </ul>
+            </div>
+           <i class="fa-solid fa-bars" class="btn_menu" id="btn_menu"></i>
+        </div>
+
+        <div class="table"id="table">
+            <h3>Tabla de contenidos</h3>
+            <div class="cont">
+                <h4>Unidad 1</h4>
+                <ul>
+                    <a href="modelosArq.html"><li><h5>Modelos de arquitectura de computo</h5></li></a>
+                    <a href="analisisComp.html"><li><h5>Análisis de los componentes</h5></li></a>
+                    <a href="memoria.html"><li><h5>Memoria</h5></li></a>
+                    <a href="manejoDeES.html"><li><h5>Manejo de entrada y salida</h5></li></a>
+                    <a href="buses.html"><li><h5>Buses</h5></li></a>
+                    <a href="practica1.html"><li><h5>Práctica 1</h5></li></a>
+                </ul>
+                <h4>Unidad 2</h4>
+                <ul>
+                    <a href="organProces.html"><li><h5>Organización del procesador</h5></li></a>
+                    <a href="cicloDeInstr.html"><li><h5>El ciclo de la instrucción</h5></li></a>
+                    <a href="practica2.html"><li><h5>Práctica 2</h5></li></a>
+                </ul>
+                <h4>Unidad 3</h4>
+                <ul>
+                    <a href="chipset.html"><li><h5>Chipset</h5></li></a>
+                    <a href="appYAmbServ.html"><li><h5>Aplicaciones y ambientes de servicio</h5></li></a>
+                </ul>
+                <h4>Unidad 4</h4>
+                <ul>
+                    <a href="aspeBasCParalela.html"><li><h5>Aspectos básicos de la computación paralela</h5></li></a>
+                    <a href="memoriaMultiP.html"><li><h5>Sistemas de memoria multiprocesadora</h5></li></a>
+                    <a href="multicomputadores.html"><li><h5>Sistemas de memoria de multicomputadores</h5></li></a>
+                </ul>
+            </div>
+        </div>
+
+        <section>
+            <div class="container">
+                <h1>COMPUTACIÓN PARALELA</h1>
+                <div class="text">
+                    <h3>Aspectos básicos de la computación paralela</h3>
+                    <p>
+                        La computación paralela es una forma de cómputo en la que muchas instrucciones se ejecutan
+                        simultáneamente, operando sobre el principio de que problemas grandes, a menudo se pueden
+                        dividir en unos más pequeños, que luego son resueltos simultáneamente (en paralelo).<br><br><br> Hay varias
+                        formas diferentes de computación paralela: paralelismo a nivel de bit, paralelismo a nivel de
+                        instrucción, paralelismo de datos y paralelismo de tareas. El paralelismo se ha empleado durante
+                        muchos años, sobre todo en la computación de altas prestaciones, pero el interés en ella ha
+                        crecido últimamente debido a las limitaciones físicas que impiden el aumento de la frecuencia
+                        Como el consumo de energía y por consiguiente la generación de calor de las
+                        computadoras constituye una preocupación en los últimos años.<br><br> La computación en paralelo se
+                        ha convertido en el paradigma dominante en la arquitectura de computadores, principalmente en
+                        forma de procesadoresmultinúcleo.<br><br>
+                        Las computadoras paralelas pueden clasificarse según el nivel de paralelismo que admite
+                        su hardware: equipos con procesadores multinúcleo y multi-procesador que tienen múltiples
+                        elementos de procesamiento dentro de una sola máquina y los clústeres, MPPS y grids que utilizan
+                        varios equipos para trabajar en la misma tarea. Muchas veces, para acelerar la tareas específicas,
+                        se utilizan arquitecturas especializadas de computación en paralelo junto a procesadores
+                        tradicionales.<br><br>
+                        Los programas informáticos paralelos son más difíciles de escribir que los secuenciales, porque la
+                        concurrencia introduce nuevos tipos de errores de software, siendo las condiciones de carrera los
+                        más comunes. La comunicación y sincronización entre diferentes subtareas son algunos de los
+                        mayores obstáculos para obtener un buen rendimiento del programa paralelo.
+                        La máxima aceleración posible de un programa como resultado de la paralelización se conoce
+                        como la ley de Amdahl.
+                    </p>
+                    <h3>Tipos de computación paralela</h3>
+                    <p>
+                        Desde el advenimiento de la integración a gran escala (VLSI) como tecnología de
+                        fabricación de chips de computadora en la década de 1970 hasta alrededor de
+                        1986, la aceleración en la arquitectura de computadores se lograba en gran
+                        medida duplicando el tamaño de la palabra en la computadora, la cantidad de
+                        información que el procesador puede manejar por ciclo.<br><br> El aumento del tamaño
+                        de la palabra reduce el número de instrucciones que el procesador debe ejecutar
+                        para realizar una operación en variables cuyos tamaños son mayores que la
+                        longitud de la palabra. Por ejemplo, cuando un procesador de 8 bits debe sumar
+                        dos enteros de 16 bits, el procesador primero debe adicionar los 8 bits de orden
+                        inferior de cada número entero con la instrucción de adición, a continuación,
+                        añadir los 8 bits de orden superior utilizando la instrucción de adición con acarreo
+                        que tiene en cuenta el bit de acarreo de la adición de orden inferior, en este caso
+                        un procesador de 8 bits requiere dos instrucciones para completar una sola
+                        operación, en donde un procesador de 16 bits necesita una sola instrucción para
+                        poder completarla.<br><br>
+                        Históricamente, los microprocesadores de 4 bits fueron sustituidos por unos de 8
+                        bits, luego de 16 bits y 32 bits, esta tendencia general llegó a su fin con la
+                        introducción de procesadores de 64 bits, lo que ha sido un estándar en la
+                        computación de propósito general durante la última década.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div>&nbsp;</div>
+        </footer>
+
+    </div>
+</body>
+<script src="../js/main.js"></script>
+</html>
+

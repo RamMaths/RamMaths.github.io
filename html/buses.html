@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/650c255290.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="banner">
+
+        <div class="back_menu" id="back_menu"></div>
+        <div class="navbar" id="ulnav">
+            <a href="https://saltillo.tecnm.mx/"><img class="logo" src="../media/logotec.png"></a>
+            <div class="navbarul" id="navbarul">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="#" id="button" class="button">CONTENIDO</a></li>
+               </ul>
+            </div>
+           <i class="fa-solid fa-bars" class="btn_menu" id="btn_menu"></i>
+        </div>
+
+        <div class="table"id="table">
+            <h3>Tabla de contenidos</h3>
+            <div class="cont">
+                <h4>Unidad 1</h4>
+                <ul>
+                    <a href="modelosArq.html"><li><h5>Modelos de arquitectura de computo</h5></li></a>
+                    <a href="analisisComp.html"><li><h5>Análisis de los componentes</h5></li></a>
+                    <a href="memoria.html"><li><h5>Memoria</h5></li></a>
+                    <a href="manejoDeES.html"><li><h5>Manejo de entrada y salida</h5></li></a>
+                    <a href="buses.html"><li><h5>Buses</h5></li></a>
+                    <a href="practica1.html"><li><h5>Práctica 1</h5></li></a>
+                </ul>
+                <h4>Unidad 2</h4>
+                <ul>
+                    <a href="organProces.html"><li><h5>Organización del procesador</h5></li></a>
+                    <a href="cicloDeInstr.html"><li><h5>El ciclo de la instrucción</h5></li></a>
+                    <a href="practica2.html"><li><h5>Práctica 2</h5></li></a>
+                </ul>
+                <h4>Unidad 3</h4>
+                <ul>
+                    <a href="chipset.html"><li><h5>Chipset</h5></li></a>
+                    <a href="appYAmbServ.html"><li><h5>Aplicaciones y ambientes de servicio</h5></li></a>
+                </ul>
+                <h4>Unidad 4</h4>
+                <ul>
+                    <a href="aspeBasCParalela.html"><li><h5>Aspectos básicos de la computación paralela</h5></li></a>
+                    <a href="memoriaMultiP.html"><li><h5>Sistemas de memoria multiprocesadora</h5></li></a>
+                    <a href="multicomputadores.html"><li><h5>Sistemas de memoria de multicomputadores</h5></li></a>
+                </ul>
+            </div>
+        </div>
+
+        <section>
+            <div class="container">
+                <h1>BUSES</h1>
+                <div class="text">
+
+                    <p>
+                        Existen dos tipos primordiales de buses (conexiones) para el
+                        envío de la información: bus paralelo o serial.
+                        Hay diferencias en el desempeño y hasta hace unos años se
+                        consideraba que el uso apropiado dependía de la longitud
+                        física de la conexión: para cortas distancias el bus paralelo,
+                        para largas el serial.<br><br>
+                    </p>
+                    <h3>Bus paralelo</h3>
+                    <p>
+                        Es un bus en el cual los datos son enviados por
+                        bytes al mismo tiempo, con la ayuda de varias líneas que
+                        tienen funciones fijas. La cantidad de datos enviada es
+                        bastante grande con una frecuencia moderada y es igual al
+                        ancho de los datos por la frecuencia de funcionamiento. En
+                        los computadores ha sido usado de manera intensiva, desde
+                        el bus del procesador, los buses de discos duros, tarjetas de
+                        expansión y de vídeo hasta las impresoras.<br><br>
+                    </p>
+                    <h3>Bus serie</h3>
+                    <p>
+                        En este los datos son enviados, bit a bit y se
+                        reconstruyen por medio de registros o rutinas de software.
+                        Está formado por pocos conductores y su ancho de banda
+                        depende de la frecuencia. Es usado desde hace menos de 10
+                        años en buses para discos duros, tarjetas de expansión y para
+                        el bus del procesador.
+                    </p>
+                    <h3>Bus de direcciones</h3>
+                    <p>
+                        Es unidireccional debido a que la
+                        información fluye es una solo sentido, del CPU a la memoria
+                        ó a los elementos de entrada y salida.
+                        El CPU puede colocar niveles lógicos en las n líneas de
+                        dirección, con la cual se genera 2n posibles direcciones
+                        diferentes. Cada una de estas direcciones corresponde a una
+                        localidad de la memoria ó dispositivo de E / S.
+                        El procesador envía un código de dirección a la memoria o a
+                        otro dispositivo externo. El tamaño o anchura del bus de
+                        direcciones está especificado por el número de hilos
+                        conductores o pines.
+                    </p>
+                    <div>&nbsp;</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div>&nbsp;</div>
+        </footer>
+
+    </div>
+</body>
+<script src="../js/main.js"></script>
+</html>

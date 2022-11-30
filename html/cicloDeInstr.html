@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/650c255290.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="banner">
+
+        <div class="back_menu" id="back_menu"></div>
+        <div class="navbar" id="ulnav">
+            <a href="https://saltillo.tecnm.mx/"><img class="logo" src="../media/logotec.png"></a>
+            <div class="navbarul" id="navbarul">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="#" id="button" class="button">CONTENIDO</a></li>
+               </ul>
+            </div>
+           <i class="fa-solid fa-bars" class="btn_menu" id="btn_menu"></i>
+        </div>
+
+        <div class="table"id="table">
+            <h3>Tabla de contenidos</h3>
+            <div class="cont">
+                <h4>Unidad 1</h4>
+                <ul>
+                    <a href="modelosArq.html"><li><h5>Modelos de arquitectura de computo</h5></li></a>
+                    <a href="analisisComp.html"><li><h5>Análisis de los componentes</h5></li></a>
+                    <a href="memoria.html"><li><h5>Memoria</h5></li></a>
+                    <a href="manejoDeES.html"><li><h5>Manejo de entrada y salida</h5></li></a>
+                    <a href="buses.html"><li><h5>Buses</h5></li></a>
+                    <a href="practica1.html"><li><h5>Práctica 1</h5></li></a>
+                </ul>
+                <h4>Unidad 2</h4>
+                <ul>
+                    <a href="organProces.html"><li><h5>Organización del procesador</h5></li></a>
+                    <a href="cicloDeInstr.html"><li><h5>El ciclo de la instrucción</h5></li></a>
+                    <a href="practica2.html"><li><h5>Práctica 2</h5></li></a>
+                </ul>
+                <h4>Unidad 3</h4>
+                <ul>
+                    <a href="chipset.html"><li><h5>Chipset</h5></li></a>
+                    <a href="appYAmbServ.html"><li><h5>Aplicaciones y ambientes de servicio</h5></li></a>
+                </ul>
+                <h4>Unidad 4</h4>
+                <ul>
+                    <a href="aspeBasCParalela.html"><li><h5>Aspectos básicos de la computación paralela</h5></li></a>
+                    <a href="memoriaMultiP.html"><li><h5>Sistemas de memoria multiprocesadora</h5></li></a>
+                    <a href="multicomputadores.html"><li><h5>Sistemas de memoria de multicomputadores</h5></li></a>
+                </ul>
+            </div>
+        </div>
+
+        <section>
+            <div class="container">
+                <h1>CICLO DE INSTRUCCIÓN</h1>
+                <div class="text">
+                      <h3>1.- Buscar la instrucción en la memoria principal</h3>
+                    <p>Se vuelca el valor del contador de programa sobre el bus de direcciones.
+                        Entonces la CPU pasa la instrucción de la memoria principal a través del bus
+                        de datos al Registro de Dirección de Memoria (MAR). A continuación el valor del
+                        MAR es colocado en el Registro de Instrucción Actual (CIR), un circuito que
+                        guarda la instrucción temporalmente de manera que pueda ser decodificada y ejecutada.
+                    </p>
+                    <h3>2.- Decodificar la instrucción</h3>
+                    <p>
+                        El decodificador de instrucción interpreta e implementa la instrucción.
+                        El registro de instrucción (IR) mantiene la instrucción en curso mientras
+                        el contador de programa (PC, program counter) guarda la dirección de memoria
+                        de la siguiente instrucción a ser ejecutada.
+                    </p>
+                    <ul>
+                        <li>Recogida de datos desde la memoria principal.</li>
+                        <li>Se accede al banco de registros por los operandos (solo si es necesario).</li>
+                        <li>
+                            Se calcula el valor del operando inmediato con extensión de signo 
+                            (solo si es necesario)
+                        </li>
+                    </ul>
+                    <p>
+                        También se lee la dirección efectiva de la memoria principal si la instrucción
+                        tiene una dirección indirecta, y se recogen los datos requeridos de la memoria
+                        principal para ser procesados y colocados en los registros de datos.
+                    </p>
+                    <h3>3.- Ejecutar la instrucción</h3>
+                    <p>
+                        A partir del registro de instrucción, los datos que forman la instrucción son
+                        decodificados por la unidad de control. Ésta interpreta la información como
+                        una secuencia de señales de control que son enviadas a las unidades funcionales
+                        relevantes de la CPU para realizar la operación requerida por la instrucción
+                        poder terminarla y seguir así.
+                    </p>
+                    <h3>4.- Almacena o guarda resultados</h3>
+                    <p>
+                        El resultado generado por la operación es almacenado en la memoria principal o enviado
+                        a un dispositivo de salida dependiendo de la instrucción. Basándose en los resultados
+                        de la operación, el contador de programa se incrementa para apuntar a la siguiente
+                        instrucción o se actualiza con una dirección diferente donde la próxima instrucción
+                        será recogida.
+                    </p>
+                    <div>&nbsp;</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div>&nbsp;</div>
+        </footer>
+
+    </div>
+</body>
+<script src="../js/main.js"></script>
+</html>

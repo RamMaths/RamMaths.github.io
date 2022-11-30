@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/650c255290.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="banner">
+
+        <div class="back_menu" id="back_menu"></div>
+        <div class="navbar" id="ulnav">
+            <a href="https://saltillo.tecnm.mx/"><img class="logo" src="../media/logotec.png"></a>
+            <div class="navbarul" id="navbarul">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="#" id="button" class="button">CONTENIDO</a></li>
+               </ul>
+            </div>
+           <i class="fa-solid fa-bars" class="btn_menu" id="btn_menu"></i>
+        </div>
+
+        <div class="table"id="table">
+            <h3>Tabla de contenidos</h3>
+            <div class="cont">
+                <h4>Unidad 1</h4>
+                <ul>
+                    <a href="modelosArq.html"><li><h5>Modelos de arquitectura de computo</h5></li></a>
+                    <a href="analisisComp.html"><li><h5>Análisis de los componentes</h5></li></a>
+                    <a href="memoria.html"><li><h5>Memoria</h5></li></a>
+                    <a href="manejoDeES.html"><li><h5>Manejo de entrada y salida</h5></li></a>
+                    <a href="buses.html"><li><h5>Buses</h5></li></a>
+                    <a href="practica1.html"><li><h5>Práctica 1</h5></li></a>
+                </ul>
+                <h4>Unidad 2</h4>
+                <ul>
+                    <a href="organProces.html"><li><h5>Organización del procesador</h5></li></a>
+                    <a href="cicloDeInstr.html"><li><h5>El ciclo de la instrucción</h5></li></a>
+                    <a href="practica2.html"><li><h5>Práctica 2</h5></li></a>
+                </ul>
+                <h4>Unidad 3</h4>
+                <ul>
+                    <a href="chipset.html"><li><h5>Chipset</h5></li></a>
+                    <a href="appYAmbServ.html"><li><h5>Aplicaciones y ambientes de servicio</h5></li></a>
+                </ul>
+                <h4>Unidad 4</h4>
+                <ul>
+                    <a href="aspeBasCParalela.html"><li><h5>Aspectos básicos de la computación paralela</h5></li></a>
+                    <a href="memoriaMultiP.html"><li><h5>Sistemas de memoria multiprocesadora</h5></li></a>
+                    <a href="multicomputadores.html"><li><h5>Sistemas de memoria de multicomputadores</h5></li></a>
+                </ul>
+            </div>
+        </div>
+
+        <section>
+            <div class="container">
+                <h1 style="font-size: 18px">SISTEMAS DE MEMORIA MULTIPROCESDORA</h1>
+                <div class="text">
+                    <h3>Multiprocesadores con Memoria Compartida</h3>
+                    <p>
+                        En los MMC, la memoria se organiza en uno o varios módulos, compartidos por todos los
+                        procesadores a través de distintos tipos de interconexión (tratados más adelante), con un acceso
+                        constante. A este tipo de arquitectura se le conoce como UMA. El acceso a los
+                        módulos por parte de los procesadores se realiza en paralelo, pero cada módulo
+                        sólamente puede atender una petición en cada instante de tiempo.
+                    </p>
+                    <h3>Multiprocesadores con Memoria Dividida</h3>
+                    <p>
+                        Este tipo de Multiprocesadores distribuye la memoria de manera que dentro de cada procesador posee uno
+                        o varios módulos de memoria propia y está conectado mediante una red de inter
+                        conexión al resto de procesadores. De esta manera, cada procesador podrá acce
+                        der tanto a su memoria local, como a la memoria remota de cualquiera del resto
+                        de procesadores. Este tipo de arquitectura se denomina NUMA.
+                    </p>
+                    <h3>Características de los MMC</h3>
+                    <p>Entre las características de los MMC se encuentran:</p>
+                    <ul>
+                        <li>
+                            Tiempos de acceso a memoria uniformes, ya que todos los procesadores se
+                            encuentran igualmente comunicados con la memoria principal.
+                        </li>
+                        <li>
+                            Las lecturas y escrituras de cada uno de los procesadores tienen exactamente
+                            las mismas latencias
+                        </li>
+                        <li>
+                            La programación es mucho más fácil que en los MMD, debido a que la gestión
+                            de la memoria de cada módulo es transparente para el programador.
+                        </li>
+                        <li>
+                            Al acceder simultáneamente a la memoria se producen colisiones y esperas, 
+                            lo que es un problema.
+                        </li>
+                        <li>
+                            Debido a la organización de la arquitectura, es poco escalable en número de
+                            procesadores, debido a que puede surgir un cuello de botella si se aumenta el número de CPU’s.
+                        </li>
+                    </ul>
+                    <div>&nbsp;</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div>&nbsp;</div>
+        </footer>
+
+    </div>
+</body>
+<script src="../js/main.js"></script>
+</html>
+
