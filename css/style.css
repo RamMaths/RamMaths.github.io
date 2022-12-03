@@ -119,6 +119,8 @@
     font-size: 22px;
     z-index: 1;
     transition: all 300ms;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .table ul li {
@@ -275,8 +277,6 @@
 
     .table {
         width: 40%;
-        overflow-x: hidden;
-        overflow-y: auto;
     }
 
     .imgInfo img{
